@@ -1,0 +1,90 @@
+Lab 1: Introduction to DBMS and SQL
+
+  -------------------------
+  1) Introduction to DBMS
+  -------------------------
+
+Difference between Traditional File System and Database System:
+
+Traditional File System: - Data stored in separate files - High
+redundancy (same data repeated in many files) - Data inconsistency is
+common - Less security, OS-based - Complex data access (requires custom
+programs) - Manual backup required
+
+Database Management System (DBMS): - Data stored in an integrated
+database - Controlled redundancy - High consistency with integrity
+constraints - High security with user access control - Easy access using
+SQL queries - Automated backup and recovery mechanisms - Supports
+multi-user concurrency
+
+  ----------------------------
+  Five Popular DBMS Software
+  ----------------------------
+
+1.  Oracle Database Provider: Oracle Corporation Website:
+    https://www.oracle.com/database Info: Enterprise RDBMS, SQL +
+    PL/SQL, high scalability and security.
+
+2.  MySQL Provider: Oracle Corporation Website: https://www.mysql.com
+    Info: Open-source RDBMS, widely used in web applications.
+
+3.  PostgreSQL Provider: PostgreSQL Global Development Group Website:
+    https://www.postgresql.org Info: Advanced open-source RDBMS with
+    object-relational features.
+
+4.  Microsoft SQL Server Provider: Microsoft Website:
+    https://www.microsoft.com/sql-server Info: Enterprise RDBMS with
+    .NET and Azure integration.
+
+5.  MongoDB Provider: MongoDB Inc. Website: https://www.mongodb.com
+    Info: NoSQL, document-oriented DB, stores JSON-like documents.
+
+  ------------------------
+  2) Introduction to SQL
+  ------------------------
+
+DDL (Data Definition Language): - CREATE: Create new database objects
+(tables, views) - ALTER: Modify table structure - DROP: Delete tables -
+TRUNCATE: Remove all rows from a table
+
+Example: CREATE TABLE Student ( RollNo INT PRIMARY KEY, Name
+VARCHAR2(30), Age INT );
+
+DML (Data Manipulation Language): - INSERT: Add new rows - UPDATE:
+Modify rows - DELETE: Remove rows - SELECT: Retrieve rows
+
+Example: INSERT INTO Student VALUES (101, ‘Darshan’, 20); SELECT * FROM
+Student;
+
+  ----------------------------------------------------
+  Basic Data Types in SQL
+  ----------------------------------------------------
+  - CHAR(n): Fixed length string - VARCHAR(n):
+  Variable length string - VARCHAR2(n):
+  Oracle-specific variable length string -
+  NUMBER(p,s): Numeric with precision and scale -
+  DATE: Stores date/time values
+
+  ----------------------------------------------------
+
+LiveSQL (Oracle)
+
+1.  Visit https://livesql.oracle.com
+2.  Login with Oracle account
+3.  Use SQL Worksheet to run queries directly
+
+  ----------------------------------------------------
+  Installation Steps: PostgreSQL
+  ----------------------------------------------------
+  1. Download from https://www.postgresql.org/download
+  2. Run installer, install PostgreSQL Server,
+  pgAdmin, SQL Shell 3. Set password for postgres user
+  4. Open pgAdmin for GUI-based access 5. Open SQL
+  Shell (psql) for command-line access
+
+  Example in SQL Shell: CREATE DATABASE mydb; ydb
+  CREATE TABLE demo(id INT, name VARCHAR(20)); INSERT
+  INTO demo VALUES (1, ‘Darshan’); SELECT * FROM demo;
+  ----------------------------------------------------
+
+End of Lab 1

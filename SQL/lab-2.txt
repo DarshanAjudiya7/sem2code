@@ -1,0 +1,68 @@
+Lab 2: Data Types and DDL SQL Statements
+
+  ---------------
+  1) Data Types
+  ---------------
+
+Basic Data Types in SQL:
+
+1.  CHAR(size)
+    -   Fixed length character string.
+    -   Example: NAME CHAR(10);
+2.  VARCHAR(size)
+    -   Variable length character string.
+    -   Example: CITY VARCHAR(20);
+3.  VARCHAR2(size) (Oracle specific)
+    -   Same as VARCHAR but optimized in Oracle.
+    -   Example: ADDRESS VARCHAR2(50);
+4.  DATE
+    -   Stores date and time values.
+    -   Example: DOB DATE;
+5.  NUMBER(p,s)
+    -   Numeric with precision and scale.
+    -   Example: SALARY NUMBER(8,2);
+6.  LONG
+    -   Stores large text data up to 2GB.
+    -   Example: DESCRIPTION LONG;
+7.  RAW / LONG RAW
+    -   Stores binary data like images or audio.
+    -   Example: IMAGE RAW(2000);
+
+  -----------------------
+  2) DDL SQL Statements
+  -----------------------
+
+a)  CREATE TABLE
+
+-   Create a new table. Syntax: CREATE TABLE table_name ( column_name
+    datatype(size), … ); Example: CREATE TABLE Student ( RollNo
+    NUMBER(5), Name VARCHAR2(30), DOB DATE, Marks NUMBER(5,2) );
+
+b)  ALTER TABLE
+
+-   Modify existing table structure. Syntax: ALTER TABLE table_name ADD
+    column_name datatype(size); ALTER TABLE table_name MODIFY
+    column_name datatype(size); ALTER TABLE table_name DROP COLUMN
+    column_name;
+
+Example: ALTER TABLE Student ADD Address VARCHAR2(50); ALTER TABLE
+Student MODIFY Name VARCHAR2(50); ALTER TABLE Student DROP COLUMN Marks;
+
+c)  DROP TABLE
+
+-   Permanently delete a table. Syntax: DROP TABLE table_name; Example:
+    DROP TABLE Student;
+
+d)  RENAME TABLE
+
+-   Rename an existing table. Syntax: RENAME old_table TO new_table;
+    Example: RENAME Student TO College_Student;
+
+e)  DESCRIBE TABLE
+
+-   Display structure of table (columns and data types). Syntax: DESC
+    table_name; Example: DESC Student;
+
+  --------------
+  End of Lab 2
+  --------------
